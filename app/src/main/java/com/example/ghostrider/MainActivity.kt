@@ -1,6 +1,7 @@
 package com.example.ghostrider
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,7 +21,17 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//        circleImageView = findViewById(R.id.circleImageView);
+            val button = findViewById<Button>(R.id.button1)
+        button.setOnClickListener {
+            // Code to execute when button is clicked
+            val fragment = ProfileFragment()
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.frame1, fragment)
+                .addToBackStack(null)
+                // Optional: Add fragment to back stack
+                .commit()
+        }
+
 
     }
 }

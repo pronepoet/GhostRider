@@ -41,7 +41,7 @@ class ProfileFragment : Fragment() {
     ): View? {
         val profileFragment: View = inflater.inflate(R.layout.fragment_profile, container, false)
         circleImageView = profileFragment.findViewById(R.id.circleImageView)
-        button = profileFragment.findViewById(R.id.floatingActionButton2)
+        button = profileFragment.findViewById(R.id.iconButtonProfile);
 
         // Inflate the layout for this fragment
         return profileFragment
