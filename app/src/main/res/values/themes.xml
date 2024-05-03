@@ -2,7 +2,7 @@
     <style name="Theme.GhostRider" parent="Theme.Material3.Light.NoActionBar">
             <item name="android:forceDarkAllowed">true</item>
         <item name="colorPrimary">@color/md_theme_primary</item>
-        <item name="colorOnPrimarySurface">@color/md_theme_onPrimary</item>
+        <item name="colorOnPrimary">@color/md_theme_onPrimary</item>
         <item name="colorPrimaryContainer">@color/md_theme_primaryContainer</item>
         <item name="colorOnPrimaryContainer">@color/md_theme_onPrimaryContainer</item>
         <item name="colorSecondary">@color/md_theme_secondary</item>
