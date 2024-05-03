@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             val button = findViewById<Button>(R.id.button1)
         button.setOnClickListener {
             // Code to execute when button is clicked
-            val fragment = ProfileFragment()
+            val fragment = GeneralProfileFragment()
             supportFragmentManager.beginTransaction()
                 .replace(R.id.frame1, fragment)
                 .addToBackStack(null)
