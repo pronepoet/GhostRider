@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="48dp"
-
+                android:textColor="#ffffff"
                 android:fontFamily="@font/poppins_reg"
                 android:text="Logout"
                 android:textFontWeight="300"
@@ -88,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="48dp"
-
+                android:textColor="#ffffff"
                 android:fontFamily="@font/poppins_reg"
                 android:text="Help"
                 android:textFontWeight="700"
@@ -138,7 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="48dp"
-
+                android:textColor="#ffffff"
                 android:fontFamily="@font/poppins_reg"
                 android:text="My Bookings"
                 android:textFontWeight="700"
@@ -153,7 +153,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginRight="40dp"
-              android:background="@drawable/chevron_right"
+                android:background="@drawable/chevron_right"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -181,6 +181,7 @@
             android:text="Profile"
             android:textFontWeight="300"
             android:textSize="20sp"
+            android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/textViewProfile"
             app:layout_constraintTop_toTopOf="parent" />
@@ -226,6 +227,7 @@
             android:text="Profile Name"
             android:textFontWeight="700"
             android:textSize="16sp"
+            android:textColor="#ffffff"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/frameLayout_profile" />
@@ -257,7 +259,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="48dp"
-
+                android:textColor="#ffffff"
                 android:fontFamily="@font/poppins_reg"
                 android:text="Your profile"
                 android:textFontWeight="700"
@@ -272,7 +274,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginRight="40dp"
-               android:background="@drawable/chevron_right"
+                android:background="@drawable/chevron_right"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -306,7 +308,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="48dp"
-
+                android:textColor="#ffffff"
                 android:fontFamily="@font/poppins_reg"
                 android:text="Settings"
                 android:textFontWeight="700"

@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="@font/poppins_reg"
         android:text="Your Profile"
+       android:textColor="#ffffff"
         android:textFontWeight="300"
         android:textSize="20sp" />
 
@@ -56,7 +57,7 @@
     </FrameLayout>
 
 
-<!--name textfield-->
+    <!--name textfield-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -67,7 +68,7 @@
         android:layout_marginEnd="2dp"
         app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/frameLayout"
-android:layout_marginTop="16dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -191,7 +192,7 @@ android:layout_marginTop="16dp"
         app:endIconMode="clear_text"
         app:layout_constraintTop_toBottomOf="@id/txtPhone"
         app:startIconDrawable="@drawable/people_outline"
-       >
+        >
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/editGender"
             android:layout_width="match_parent"
