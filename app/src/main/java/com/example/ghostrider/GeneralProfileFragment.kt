@@ -1,12 +1,16 @@
  package com.example.ghostrider
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.cardview.widget.CardView
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.fragment.app.Fragment
 
-// TODO: Rename parameter arguments, choose names that match
+ // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -34,7 +38,25 @@ class GeneralProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_general_profile, container, false)
+        val generalProfileFragment: View = inflater.inflate(R.layout.fragment_general_profile, container, false)
+        val button1: ConstraintLayout = generalProfileFragment.findViewById<ConstraintLayout>(R.id.layoutEditProfile)
+
+        button1.setOnClickListener(View.OnClickListener {
+            val intent = Intent(
+                activity,
+                EditProfile::class.java
+            )
+            startActivity(intent)
+        })
+//
+//        val profileFragment: View = inflater.inflate(R.layout.fragment_profile, container, false)
+//        circleImageView = profileFragment.findViewById(R.id.circleImageView)
+//        button = profileFragment.findViewById(R.id.iconButtonProfile);
+//
+//        // Inflate the layout for this fragment
+//        return profileFragment
+        return generalProfileFragment;
+
     }
 
     companion object {
