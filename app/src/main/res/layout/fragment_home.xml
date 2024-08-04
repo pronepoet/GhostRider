@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/welcomeTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="28dp"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_below="@+id/welcomeTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/brandholder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_below="@+id/search_view">
+            <TextView
+                android:id="@+id/brandtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brands"
+                android:textSize="28dp"
+                android:paddingHorizontal="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/brandcard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brandtxt"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="10dp"
+            tools:listitem="@layout/brands"
+            android:orientation="horizontal"
+            tools:itemCount="6"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/popularholder"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_below="@+id/brandholder">
+            <TextView
+                android:id="@+id/populartxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Popular Cars"
+                android:textSize="28dp"
+                android:paddingHorizontal="20dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/popularCars"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/populartxt"
+                android:layout_marginTop="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="20dp"
+                tools:listitem="@layout/ppitem"
+                android:orientation="vertical"
+                tools:itemCount="5"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
+</FrameLayout>

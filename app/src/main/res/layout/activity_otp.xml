@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/O_txt1"
+        android:text="Verify Code"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/O_txt2"
+        android:text="Please enter the code just sent to email  "
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/O_txt1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/O_txt3"
+        android:text="example@gmail.com"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/O_txt2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/O_ly1"
+        android:orientation="horizontal"
+        android:padding="30dp"
+        android:layout_below="@+id/O_txt3"
+        android:layout_marginTop="25dp">
+        
+        <EditText
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="40dp"/>
+        <EditText
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="15dp"/>
+        <EditText
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="15dp"/>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/O_ly1"
+        android:text="Didn't receive OTP?"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:id="@+id/O_txt4"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/O_txt4"
+        android:text="Resend OTP"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:id="@+id/O_txt5"
+        android:textColor="@color/black" />
+
+
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/elevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:textSize="16dp"
+        android:layout_below="@+id/O_txt5"
+        android:layout_marginTop="10dp"
+        android:width="300dp"
+        android:layout_centerHorizontal="true"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Medium"
+        app:backgroundTint="@color/black"
+        />
+
+
+
+</RelativeLayout>
